@@ -16,4 +16,49 @@ fun main() {
     }
 
    println(product(67,89))
+    /*
+        type declaration
+     */
+    val sumB:(Int,Int)->Int={int,int1->int+int1}
+    println(sumB(5,4))
+
+    val that : (Int)-> Int = {three -> three}
+
+    println(that(8))
+
+    val more :(String,Int)->String={value1,value2->
+        "value1 is $value1,value2 is $value2"
+    }
+
+    println(more("peter",27))
+
+    val more1 :(Double,Double)->Double={value1,value2->
+        value1*value2
+    }
+
+    println(more1(89.0,70.0))
+
+    val more2: ()->Unit={ println("hey there how are you doing")}
+
+    more2()
+
+    /*
+        lamdas as class extension
+     */
+
+    val another: String.(Int)->String={this + it}
+
+    println(another("peter ",23))
+
+    fun extendString(arg:String,num:Int):String{
+        val another:String.(Int)->String={this + it}
+        return arg.another(num)
+    }
+
+   println(extendString("welcome to america through gate ",2))
+
+
+
+
+
 }
