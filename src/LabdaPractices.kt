@@ -78,5 +78,12 @@ fun main() {
     println(student1("Peter","Nyangon"))
 
 
+    val student2:(age:Int,name:String)->Int={
+        age, name ->  age
+    }
+
+    println(student2(23,"peter"))
+
+
 
 }
