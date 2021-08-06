@@ -59,6 +59,24 @@ fun main() {
 
 
 
+    val lambda1 ={
+        println("hello world")
+    }
+
+    lambda1()
+
+    val labda2 :(String)->Unit = {
+        name:String -> println("my name is $name")
+    }
+
+    labda2("Peter")
+
+
+
+
+
+
+
 
 
 }
