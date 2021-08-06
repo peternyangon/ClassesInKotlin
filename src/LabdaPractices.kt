@@ -62,7 +62,6 @@ fun main() {
     val lambda1 ={
         println("hello world")
     }
-
     lambda1()
 
     val labda2 :(String)->Unit = {
@@ -72,10 +71,11 @@ fun main() {
     labda2("Peter")
 
 
+    val student1:(firstName:String,secondName:String)->String={
+        firstName, secondName ->  ("Student full name is $firstName $secondName")
+    }
 
-
-
-
+    println(student1("Peter","Nyangon"))
 
 
 
